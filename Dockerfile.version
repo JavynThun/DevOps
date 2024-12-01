@@ -1,0 +1,9 @@
+FROM python:3.14.0a2-alpine3.20
+
+COPY version.py /app/version.py
+WORKDIR /app
+
+ENTRYPOINT ["python3"]
+
+CMD ["version.py"]
+
